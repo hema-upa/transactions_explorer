@@ -23,4 +23,7 @@ class BlockTrasanctions:
     def validate_heading(self, locator_tuple):
         element = self.wait.until(EC.visibility_of_element_located((locator_tuple)))
         return element.text
+        
+    def input_ouput_transaction():
+        pass
     
