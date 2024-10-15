@@ -18,6 +18,7 @@ def test_heading(driver):
     heading = page.validate_heading((By.XPATH, f"//*[@class = 'font-h3']"))
     assert "25 of 2875 Transactions" == heading
 def test_input_output(driver):
-
-    pass
+    page = BlockTrasanctions(driver)
+    page.open()
+    print(input_ouput_transaction())
 
