@@ -5,10 +5,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-# Initialize WebDriver
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
 wait =  WebDriverWait(driver, 20)
 
 class BlockTrasanctions:
